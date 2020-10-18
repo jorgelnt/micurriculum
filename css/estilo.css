@@ -1,0 +1,367 @@
+header {
+    margin-bottom: 5em;
+    width: 30%;
+    margin-left: 10%;
+}
+
+.border {
+    height: 0.5em;
+    width: 0.5em;
+    background-color: #415aca;
+    border-radius: 10px;
+    animation: border;
+    animation-timing-function: ease-in;
+    animation-duration: 9s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.ball {
+    display: inline;
+    z-index: 1;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    background-color: rgb(26, 42, 136);
+    margin-top: -1em;
+    margin-right: 10%;
+    float: right;
+    clear: both;
+    animation-name: ball;
+    animation-delay: 0s;
+    animation-duration: 9s;
+    animation-fill-mode: forwards;
+    background-image: url(../imagenes/357.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    opacity: 0;
+    display: inline;
+    z-index: 2;
+    position: absolute;
+    border-radius: 100%;
+    border: .4em solid #252d9b !important;
+    height: auto;
+    width: 9.5em;
+    margin: 0;
+    animation-name: opacity;
+    animation-delay: 9s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.text-img {
+    opacity: 0;
+    width: 13%;
+    margin-top: 11em;
+    float: right;
+    position: absolute;
+    margin-left: 80%;
+    text-align: right;
+    padding-right: 1em;
+    animation-name: text;
+    animation-delay: 9s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.div-text-img {
+    background-color: #415aca;
+    width: 0.3em;
+    float: right;
+    display: inline;
+    border-radius: 10px;
+    max-height: 15em;
+    animation-name: divtext;
+    animation-delay: 9s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+h1 {
+    margin-top: 2.5em;
+}
+
+h4 {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: Sen, Lato, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    padding-left: 0.5em;
+    border-left: solid 0.2em #415aca;
+}
+
+.last-h3 {
+    border-left: solid 0.2em #415aca;
+}
+
+ul {
+    list-style: none;
+}
+
+li:before {
+    content: "*";
+    font-size: 1em;
+    font-weight: bolder;
+    padding-right: 0.5em;
+    animation-name: li;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+li:nth-child(1):before {
+    animation-delay: 2s;
+}
+
+li:nth-child(2):before {
+    animation-delay: 3s;
+}
+
+li:nth-child(3):before {
+    animation-delay: 4s;
+}
+
+li:nth-child(4):before {
+    animation-delay: 5s;
+}
+
+li:nth-child(5):before {
+    animation-delay: 6s;
+}
+
+span {
+    color: #415aca;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.contact {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+
+/*.containers {
+    width: 80%;
+    max-width: 1000px;
+    min-width: 320;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: center;
+    height: inherit;
+    overflow: hidden;
+    flex-wrap: wrap;
+}*/
+
+.social-link {
+    display: inline-block;
+    width: 3.20em;
+    height: 3.20em;
+    background-size: 3.12em 3.12em;
+    /*margin: 0 0.6em;*/
+}
+
+.social-link.facebook {
+    background-image: url("../imagenes/facebook2.ico");
+    background-size: cover;
+}
+
+.social-link.facebook:hover {
+    background-image: url("../imagenes/facebook.ico");
+    background-size: cover;
+}
+
+.social-link.github {
+    background-image: url("../imagenes/git2.ico");
+    background-size: cover;
+}
+
+.social-link.github:hover {
+    background-image: url("../imagenes/git.ico");
+    background-size: cover;
+}
+
+.social-link.instagram {
+    background-image: url("../imagenes/instagran2.ico");
+    background-size: cover;
+}
+
+.social-link.instagram:hover {
+    background-image: url("../imagenes/instagran.ico");
+    background-size: cover;
+}
+
+.social-link.linkedin {
+    background-image: url("../imagenes/linkedi2.ico");
+    background-size: cover;
+}
+
+.social-link.linkedin:hover {
+    background-image: url("../imagenes/linkedi.ico");
+    background-size: cover;
+}
+
+.social-link.youtube {
+    background-image: url("../imagenes/youtube2.ico");
+    background-size: cover;
+}
+
+.social-link.youtube:hover {
+    background-image: url("../imagenes/youtube.ico");
+    background-size: cover;
+}
+
+.social-link.html5 {
+    background-image: url("../imagenes/html.png");
+    background-size: cover;
+}
+
+.social-link.css {
+    background-image: url("../imagenes/css.ico");
+    background-size: cover;
+}
+
+.social-link.boostrap {
+    background-image: url("../imagenes/bootstrap.ico");
+    background-size: cover;
+}
+
+.social-link.javascript {
+    background-image: url("../imagenes/javascrip.ico");
+    background-size: cover;
+}
+
+.social-link.vue {
+    background-image: url("../imagenes/vue.ico");
+    background-size: cover;
+}
+
+.social-link.postgresql {
+    background-image: url("../imagenes/postgresql.ico");
+    background-size: cover;
+}
+
+.social-link.python {
+    background-image: url("../imagenes/python.ico");
+    background-size: cover;
+}
+
+.social-link.django {
+    background-image: url("../imagenes/django.ico");
+    background-size: cover;
+}
+
+.social-link.php {
+    background-image: url("../imagenes/php.ico");
+    background-size: cover;
+}
+
+.social-link.vsc {
+    background-image: url("../imagenes/vscode.ico");
+    background-size: cover;
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes border {
+    0% {
+        width: 0.5em;
+    }
+    80% {
+        margin-left: calc(100% - 0.5em);
+        width: 0.5em;
+    }
+    100% {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@keyframes li {
+    from {
+        color: inherit;
+    }
+    to {
+        color: #415aca;
+    }
+}
+
+@keyframes ball {
+    0% {
+        opacity: 0;
+        margin-top: 100%;
+        width: 4em;
+        height: 4em;
+    }
+    80% {
+        opacity: 1;
+        margin-top: 0.2em;
+        width: 4em;
+        height: 4em;
+    }
+    100% {
+        width: 10.1em;
+        height: 10.1em;
+    }
+}
+
+@keyframes text {
+    0% {
+        margin-top: 100%;
+        height: 300%;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 11em;
+        height: 100%;
+        opacity: 1
+    }
+}
+
+@keyframes divtext {
+    0% {
+        margin-top: 100%;
+        height: 0%;
+        opacity: 1;
+    }
+    100% {
+        margin-top: 0;
+        height: 50%;
+        opacity: 1
+    }
+}
